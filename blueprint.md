@@ -4,13 +4,15 @@ FORMAT: 1A
 This API contain services for retrieving pages and containers and optimize it for Android devices 
 
 
-# /android/1.1/content/page/{pageid}
+## /android/1.1/content/page/{pageid}
 
-## GET 
 
 + Parameters
 
     + pageid (string, `home`) ... An unique identifier (as defined in AppGrid) of the page
+    
+### GET 
+    
 + Response 200 (application/json)
 
     + Headers
@@ -20,7 +22,7 @@ This API contain services for retrieving pages and containers and optimize it fo
 
             { "abc": "defxy" }
 
-#/android/1.1/content/page/{pageid}/container/{containerid}
+##/android/1.1/content/page/{pageid}/container/{containerid}
 
 + Parameters
 
