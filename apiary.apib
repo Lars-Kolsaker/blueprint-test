@@ -1,0 +1,56 @@
+FORMAT: 1A
+
+# Bonnier OTT: CAPI
+Bonnier OTT: CAPI 
+
+# Group Android
+Android related resources
+
+## Page [/android/1.1/page/{pageid}]
+
++ Parameters
+
+    + pageid (string, `home`) ... An unique identifier (as defined in AppGrid) of the page
+
+
+### Get layout for a page [GET]
+
++ Response 200 (application/json)
+
+    + Headers
+
+
+    + Body
+
+            { "abc": "defxy" }
+
+## Container [/android/1.1/page/{pageid}/container/{containerid}]
+
++ Parameters
+
+    + pageid (string, `home`) ... An unique identifier (as defined in AppGrid) of the page
+    + containerid (string, `top`) ... An unique identifier (as defined in AppGrid) of the container
+
+### Get a container on a specific page [GET]
+
++ Response 200 (application/json)
+
+    + Headers
+
+
+    + Body
+
+            { "abc": "def" }
+
+# Group iOS
+iOs related resources
+
+# Group WebClient
+WebClient related resources
+
+# Group AppleTV
+AppleTV related resources
+
+# Group Common/Backing 
+Common resources that will be backing the client adapters
+
