@@ -1,3 +1,6 @@
+# Group Android
+All APIs used by and optimized for Android devices
+
 ## Page [/android/1.1/content/page/{pageid}]
 
 + Parameters
@@ -15,3 +18,21 @@
     + Body
 
             { "abc": "defxy" }
+
+## Container [/android/1.1/content/page/{pageid}/container/{containerid}]
+
++ Parameters
+
+    + pageid (string, `home`) ... An unique identifier (as defined in AppGrid) of the page
+    + containerid (string, `top`) ... An unique identifier (as defined in AppGrid) of the container
+
+### Get a container on a specific page [GET]
+
++ Response 200 (application/json)
+
+    + Headers
+
+
+    + Body
+
+            { "abc": "def" }
