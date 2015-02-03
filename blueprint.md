@@ -1,15 +1,16 @@
-# Group Android
-All APIs used by and optimized for Android devices
+FORMAT: 1A
 
-## Page [/android/1.1/content/page/{pageid}]
+# Android Content API
+This API contain services for retrieving pages and containers and optimize it for Android devices 
+
+
+# /android/1.1/content/page/{pageid}
+
+## GET 
 
 + Parameters
 
     + pageid (string, `home`) ... An unique identifier (as defined in AppGrid) of the page
-
-
-### Get layout for a page [GET]
-
 + Response 200 (application/json)
 
     + Headers
@@ -19,14 +20,14 @@ All APIs used by and optimized for Android devices
 
             { "abc": "defxy" }
 
-## Container [/android/1.1/content/page/{pageid}/container/{containerid}]
+#/android/1.1/content/page/{pageid}/container/{containerid}
 
 + Parameters
 
     + pageid (string, `home`) ... An unique identifier (as defined in AppGrid) of the page
     + containerid (string, `top`) ... An unique identifier (as defined in AppGrid) of the container
 
-### Get a container on a specific page [GET]
+## GET 
 
 + Response 200 (application/json)
 
