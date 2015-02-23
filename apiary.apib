@@ -54,3 +54,25 @@ AppleTV related resources
 # Group Common/Backing 
 Common resources that will be backing the client adapters
 
+# Group Search
+
+## List of available episodes [/web/<versionnumber>/search/episode]
+Get list of available episodes for a season of a show
+### Seach episodes [GET]
++ Request (application/json)
+
+    + Headers
+    
+            Authorization: <JWT Token>
+        
+    + Body
+
+            {"show": "bygglov", "season": "1", "device": "web"}
+
++ Response 200 (application/json)
+    + Headers
+    
+    + Body
+
+            {"episodes":[{"id":"2378094","title":"Sommartorpet renoveras"},{"id":"2383337","title":"Glashuset"}]}
+
